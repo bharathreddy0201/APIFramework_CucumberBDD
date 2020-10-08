@@ -25,7 +25,6 @@ A simple API automation framework using Cucumber BDD and RestAssured .
 6.  Easily Scalable approach.
 7. RestAssured using java can be easily integrated with the cucumber BDD.
 
-
 # PreRequisities :
 1.	Download Eclipse .
 2.	Download Jdk and latest maven files .
@@ -34,8 +33,6 @@ A simple API automation framework using Cucumber BDD and RestAssured .
 5.	Run As Maven clean and maven install .
 6.	Code is ready for testing .
 
-# Automation Testing Scenarios :
-Below are the list of API test scenario's given as part of testing .
 # src/main/java : 
 1.	Packages -> POJO : POJOs are used for increasing the readability and re-usability of a program and Using concept of serilization and deserialization .
 
@@ -49,9 +46,16 @@ Below are the list of API test scenario's given as part of testing .
 # Reporting :
 1.	The Logging framework messages will be stored in the loggging.txt file .
 
-# Task Requirements :
-1.	Task 1 : To write the different test cases for the address  scenario validation .(Refer Address_Validation_Scenario.xlsx)
-2.	Task 2 : Creation of automation test for Search functionality (Refer to Src folder ) .
+# Automation Testing Scenarios :
+Below are the list of API test scenario's given as part of testing .
+BaseURI : http://localhost:8080/
+1.List all available devices: GET `/devices`:
+2.Connect to a device: POST `/connect`:
+3.Get the state of a device: GET `/state`:
+4.Set the brightness of a device: POST `/brightness`:
+5.Set the color of a device: POST `/color`:
+6.Set the name of a device: POST `/name`:
+7.Disconnect from any device: POST `/disconnect`:
 
 # How to Run the Test from Eclipse IDE  :
 1. Extract the project files .
