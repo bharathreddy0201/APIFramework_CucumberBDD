@@ -18,9 +18,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import pojo.AddPlace;
 import pojo.ConnectIP;
-import pojo.Location;
 import resources.APIResources;
 import resources.TestDataBuild;
 import resources.Utils;
@@ -30,7 +28,6 @@ public class StepDefination extends Utils {
 	ResponseSpecification resspec;
 	Response response;
 	TestDataBuild data = new TestDataBuild();
-	static String place_id;
 
 	@Given("The endpoint of the API to get all devices")
 	public void the_endpoint_of_the_API_to_get_all_devices() throws IOException {
@@ -70,21 +67,22 @@ public class StepDefination extends Utils {
 	public void the_endpoint_of_the_API_to_get_device_state() throws IOException {
 		res = given().spec(requestSpecification());
 	}
-	
+
 	@Given("The endpoint of the API to set the brightness to input device")
 	public void the_endpoint_of_the_API_to_set_the_brightness_to_input_device() throws IOException {
 		res = given().spec(requestSpecification()).queryParam("brightness", 4);
 	}
+
 	@Given("The endpoint of the API to set the color to input device")
 	public void the_endpoint_of_the_API_to_set_the_color_to_input_device() throws IOException {
 		res = given().spec(requestSpecification()).queryParam("color", "#336699");
 	}
-	
+
 	@Given("The endpoint of the API to set the name to input device")
 	public void the_endpoint_of_the_API_to_set_the_name_to_input_device() throws IOException {
 		res = given().spec(requestSpecification()).queryParam("name", "foobar");
 	}
-	
+
 	@Given("The endpoint of the API to disconnect to input device")
 	public void the_endpoint_of_the_API_to_disconnect_to_input_device() throws IOException {
 		res = given().spec(requestSpecification());
