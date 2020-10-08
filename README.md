@@ -42,20 +42,8 @@ A simple API automation framework using Cucumber BDD and RestAssured .
 3.	Packages -> StepDefination : The code implementation of the feature files can be found here.
 4.	Packages -> TestRuner : This package contains the main class file which connects feature class files and step defination class file.
 
-
 # Reporting :
 1.	The Logging framework messages will be stored in the loggging.txt file .
-
-# Automation Testing Scenarios :
-Below are the list of API test scenario's given as part of testing .
-BaseURI : http://localhost:8080/
-1.List all available devices: GET `/devices`:
-2.Connect to a device: POST `/connect`:
-3.Get the state of a device: GET `/state`:
-4.Set the brightness of a device: POST `/brightness`:
-5.Set the color of a device: POST `/color`:
-6.Set the name of a device: POST `/name`:
-7.Disconnect from any device: POST `/disconnect`:
 
 # How to Run the Test from Eclipse IDE  :
 1. Extract the project files .
@@ -69,4 +57,13 @@ BaseURI : http://localhost:8080/
 2. Use Maven Coammands to run ( mvn clean install) .
 
 
-
+# Automation Testing Scenarios :
+Below are the list of API test scenario's given as part of testing .
+BaseURI : http://localhost:8080/
+1.List all available devices: GET `/devices`:
+2.Connect to a device: POST `/connect`:
+3.Get the state of a device: GET `/state`:
+4.Set the brightness of a device: POST `/brightness`:
+5.Set the color of a device: POST `/color`:
+6.Set the name of a device: POST `/name`:
+7.Disconnect from any device: POST `/disconnect`:
